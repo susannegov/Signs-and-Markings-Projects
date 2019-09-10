@@ -39,8 +39,8 @@ class FeatureLayerDataFrame:
                    "Parking stall line", "Handicap symbol"]
         symbol = ["Bike","Shared lane (Sharrow)","Bicyclist",
                   "Railroad Crossing (RxR)","Chevron","Pedestrian","Diamond"]
-        rpm = ['Blue','']
-        t =['word','arrow','symbol','','','RPM']
+        rpm = ['blue','']
+        t =['word','arrow','symbol','','','rpm']
         st = [word,arrow,symbol,other,parking,rpm]
         index = 0
         for i in renameList:
