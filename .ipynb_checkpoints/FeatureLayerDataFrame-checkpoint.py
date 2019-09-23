@@ -5,7 +5,7 @@ Created on Mon Sep  9 16:06:16 2019
 @author: Govs
 """
 
-from arcgis.features import FeatureLayer
+from arcgis.features import FeatureLayer, SpatialDataFrame
 
 class FeatureLayerDataFrame:
     def __init__(self,name):
@@ -14,6 +14,15 @@ class FeatureLayerDataFrame:
                     + r"services/TRANSPORTATION_{}/FeatureServer/0")
         self.fl = FeatureLayer(self.url.format(name))
     
+    def query(self,q):
+        try:
+            sdf = self.fl.query(where=q).sdf
+            if 'markings_specialty_point' in self.name:
+                sdf = self.specialty_markings(sdf)
+            return sdf
+        except:
+            pass
+        
     def query_segments(self,segments):
         try:
             q = "SEGMENT_ID IN({})".format(str(segments)[1:-1])
@@ -39,8 +48,8 @@ class FeatureLayerDataFrame:
                    "Parking stall line", "Handicap symbol"]
         symbol = ["Bike","Shared lane (Sharrow)","Bicyclist",
                   "Railroad Crossing (RxR)","Chevron","Pedestrian","Diamond"]
-        rpm = ['blue','']
-        t =['word','arrow','symbol','','','rpm']
+        rpm = ['Blue','']
+        t =['word','arrow','symbol','','','RPM']
         st = [word,arrow,symbol,other,parking,rpm]
         index = 0
         for i in renameList:

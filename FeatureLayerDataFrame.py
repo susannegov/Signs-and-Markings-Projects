@@ -5,7 +5,7 @@ Created on Mon Sep  9 16:06:16 2019
 @author: Govs
 """
 
-from arcgis.features import FeatureLayer
+from arcgis.features import FeatureLayer, SpatialDataFrame
 
 class FeatureLayerDataFrame:
     def __init__(self,name):
@@ -13,7 +13,7 @@ class FeatureLayerDataFrame:
         self.url = (r"https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/"
                     + r"services/TRANSPORTATION_{}/FeatureServer/0")
         self.fl = FeatureLayer(self.url.format(name))
-    
+        
     def query_segments(self,segments):
         try:
             q = "SEGMENT_ID IN({})".format(str(segments)[1:-1])
