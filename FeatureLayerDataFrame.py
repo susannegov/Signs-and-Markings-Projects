@@ -14,9 +14,10 @@ class FeatureLayerDataFrame:
                     + r"services/TRANSPORTATION_{}/FeatureServer/0")
         self.fl = FeatureLayer(self.url.format(name))
         
-    def query_segments(self,segments):
+    def query_segments(self,seg_id,segments,optional_q):
         try:
-            q = "SEGMENT_ID IN({})".format(str(segments)[1:-1])
+            q = seg_id + " IN({})".format(str(segments)[1:-1])
+            q = q + optional_q
             sdf = self.fl.query(where=q).sdf
             if 'markings_specialty_point' in self.name:
                 sdf = self.specialty_markings(sdf)
