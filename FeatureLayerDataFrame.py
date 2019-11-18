@@ -13,6 +13,9 @@ class FeatureLayerDataFrame:
         self.url = (r"https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/"
                     + r"services/TRANSPORTATION_{}/FeatureServer/0")
         self.fl = FeatureLayer(self.url.format(name))
+        self.sdf = SpatialDataFrame.from_layer(self.fl)
+        if 'markings_specialty_point' in self.name:
+            self.sdf = self.specialty_markings(self.sdf)
         
     def query_segments(self,seg_id,segments,optional_q):
         try:
