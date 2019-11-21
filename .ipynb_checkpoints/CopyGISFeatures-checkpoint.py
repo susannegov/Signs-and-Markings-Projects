@@ -16,7 +16,7 @@ class GISFeatures:
     def to_df(self):
         new_tbl=[]
         tbl = self.in_tbl.split('\t')
-        cols = i = tbl.index('SHAPE *') + 1
+        cols = i = tbl.index('SHAPE') + 1
         while i < len(tbl):
             try:
                 temp = tbl[i].split(' ')
