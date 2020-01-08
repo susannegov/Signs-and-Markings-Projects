@@ -4,7 +4,7 @@ Created on Mon Sep  9 16:06:16 2019
 
 @author: Govs
 """
-
+import math
 from arcgis.features import FeatureLayer, SpatialDataFrame
 
 class FeatureLayerDataFrame:
@@ -33,7 +33,7 @@ class FeatureLayerDataFrame:
         sub_field = 'SPECIALTY_POINT_SUB_TYPE'
         renameList = list(zip(list(df[field]),list(df[sub_field])))
         word = ["Stop","Yield","Ahead","Only","Merge","Ped", "X-ing","MPH",
-                "Bus Only","Ped X-ing","Keep Clear","Do Not Block"]
+                "Bus","Ped X-ing","Keep Clear","Do Not Block","Bike","And","Custom"]
         arrow = ["Through","Left","Right","Left/Right",
                  "Left/Right/Through","Left/Through","Right/Through",
                  "U-turn","Lane reduction","Wrong way","Bike"]
@@ -48,6 +48,8 @@ class FeatureLayerDataFrame:
         st = [word,arrow,symbol,other,parking,rpm]
         index = 0
         for i in renameList:
+            if math.isnan(i[1]):
+                continue
             x = list(map(int,list(i)))
             temp = st[x[0] - 1][x[1] - 1] + " " + t[x[0] - 1]
             renameList[index] = temp
