@@ -1,12 +1,16 @@
-MUTCD,Sign Totals
-Stop Sign,13
-No Truck,4
-School Pedestrian Crossing,3
-Speed Limit,2
-End School Zone,1
-Handicap Sign,1
+Sign Type,count
+Stop,27
+Speed Limit,10
+Street Name,8
+Pedestrian,5
+No Truck,2
+Road Humps,2
+Stop Ahead,2
+Handicap,1
 No Outlet,1
-Stop Ahead,1
-Street Name Sign,1
-W1-3,1
+No Parking,1
+Right Turn,1
+Road Humps MPH,1
+Wavy Straight Arrow,1
+Wavy Turn,1
 Yield,1
