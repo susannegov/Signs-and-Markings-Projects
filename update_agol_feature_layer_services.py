@@ -15,13 +15,23 @@ Future update: Make the script flexible to any AGOL feature layer.
 # Packages I import
 from arcgis.gis import GIS
 from arcgis.features import FeatureLayer
-
+import pandas as pd
+import geopandas as gpd
 # setup feature layer to update
-gis = GIS("https://austin.maps.arcgis.com/home/index.html", 
-          client_id='CrnxPfTcm7Y7ZGl7')
-url = r"https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/{}"
-feature_name = "Bus_Lane_Retroreflectivity_Measurements"
-fl = url.format(feature_name + r"/FeatureServer")
-folder = r"G:\ATD\Signs_and_Markings\MARKINGS\Red Bus Lane Pictures"
-bus = FeatureLayer(fl,gis)
-bus.export_attachments(folder,"ATTACHMENT_ID")
+# client_id='CrnxPfTcm7Y7ZGl7'
+gis = GIS("https://austin.maps.arcgis.com/home/index.html")
+
+url = r"https://services.arcgis.com/0L95CJ0VTaxqcmED/arcgis/rest/services/{}/FeatureServer/1"
+feature_name = "Data_Tracker_Signs_Markings"
+out_path = r"G:\ATD\Signs_and_Markings\MARKINGS\Markings WORK ORDERS"
+shp_name = "markings_work_orders.shp"
+
+fl = FeatureLayer(url.format(feature_name))
+
+sdf =  pd.DataFrame.spatial.from_layer(fl)
+print(sdf.head())
+
+df = gpd.GeoDataFrame(sdf)
+print(df)
+#df.to_file(driver = 'ESRI Shapefile', filename = out_path + '//' + shp_name)
+

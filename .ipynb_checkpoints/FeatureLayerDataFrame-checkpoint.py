@@ -39,11 +39,11 @@ class FeatureLayerDataFrame:
                  "U-turn","Lane reduction","Wrong way","Bike"]
         other = ["Green pad", "Green launch pad", "Speed hump marking",
                  "Diagonal crosshatch", "Chevron crosshatch"]
-        parking = ["Parking 'L'", "Parking 'T'", 
+        parking = ["Parking 'L'", "Parking 'T'",'','','','', 
                    "Parking stall line", "Handicap symbol"]
         symbol = ["Bike","Shared lane (Sharrow)","Bicyclist",
                   "Railroad Crossing (RxR)","Chevron","Pedestrian","Diamond"]
-        rpm = ['Blue','']
+        rpm = ['Blue','','','','','','','','']
         t =['word','arrow','symbol','','','RPM']
         st = [word,arrow,symbol,other,parking,rpm]
         index = 0
