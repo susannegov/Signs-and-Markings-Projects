@@ -1,0 +1,26 @@
+<annotation>
+	<folder>SignsFY2019ImageryCropped</folder>
+	<filename>9_S.png</filename>
+	<path>/Users/SusanneGov/Documents/Python Projects/Signs-and-Markings-Projects/OverheadSigns/SignsFY2019ImageryCropped/9_S.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>560</width>
+		<height>280</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>street name sign</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>332</xmin>
+			<ymin>85</ymin>
+			<xmax>399</xmax>
+			<ymax>102</ymax>
+		</bndbox>
+	</object>
+</annotation>

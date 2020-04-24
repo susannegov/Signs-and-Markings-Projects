@@ -1,0 +1,26 @@
+<annotation>
+	<folder>SignsFY2019ImageryCropped</folder>
+	<filename>45_N.png</filename>
+	<path>/Users/SusanneGov/Documents/Python Projects/Signs-and-Markings-Projects/OverheadSigns/SignsFY2019ImageryCropped/45_N.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>560</width>
+		<height>280</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>street name sign</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>250</xmin>
+			<ymin>58</ymin>
+			<xmax>288</xmax>
+			<ymax>75</ymax>
+		</bndbox>
+	</object>
+</annotation>
