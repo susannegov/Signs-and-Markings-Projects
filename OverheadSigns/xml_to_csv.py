@@ -1,9 +1,12 @@
 # Original: https://github.com/datitran/raccoon_dataset/blob/master/xml_to_csv.py
+# Author: datittran
+# I imported pathlib and changed path/file names.
 
 import os
 import glob
 import pandas as pd
 import xml.etree.ElementTree as ET
+from pathlib import Path
 
 
 def xml_to_csv(path):
@@ -28,11 +31,14 @@ def xml_to_csv(path):
 
 
 def main():
-    image_path = os.path.join(os.getcwd(), 'SignsFY19Labelled')
-    print(image_path)
-    xml_df = xml_to_csv(image_path)
-    xml_df.to_csv('overhead_signs.csv', index=None)
-    print('Successfully converted xml to csv.')
+    for folder in ['train', 'test']:
+        FILE_PATH = str(Path.cwd())
+        image_path = FILE_PATH + r'/SignsFY19Labelled'
+        #image_path = os.path.join(os.getcwd(), 'SignsFY19Labelled')
+        print(image_path)
+        xml_df = xml_to_csv(image_path)
+        xml_df.to_csv(FILE_PATH + "//" + folder + '_overhead_signs.csv', index=None)
+        print('Successfully converted xml to csv.')
 
 
 main()
