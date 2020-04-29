@@ -31,13 +31,12 @@ def xml_to_csv(path):
 
 
 def main():
-    for folder in ['train', 'test']:
         FILE_PATH = str(Path.cwd())
         image_path = FILE_PATH + r'/SignsFY19Labelled'
         #image_path = os.path.join(os.getcwd(), 'SignsFY19Labelled')
         print(image_path)
         xml_df = xml_to_csv(image_path)
-        xml_df.to_csv(FILE_PATH + "//" + folder + '_overhead_signs.csv', index=None)
+        xml_df.to_csv(FILE_PATH + "//overhead_signs.csv', index=None)
         print('Successfully converted xml to csv.')
 
 
