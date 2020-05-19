@@ -1,0 +1,26 @@
+<annotation>
+	<folder>SignsFY2019ImageryCropped</folder>
+	<filename>62_N.png</filename>
+	<path>/Users/SusanneGov/Documents/Python Projects/Signs-and-Markings-Projects/OverheadSigns/SignsFY2019ImageryCropped/62_N.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>560</width>
+		<height>280</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bicyclists must use ped signal sign</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>400</xmin>
+			<ymin>62</ymin>
+			<xmax>424</xmax>
+			<ymax>93</ymax>
+		</bndbox>
+	</object>
+</annotation>

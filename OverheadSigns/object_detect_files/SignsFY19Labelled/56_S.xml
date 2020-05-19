@@ -1,0 +1,38 @@
+<annotation>
+	<folder>SignsFY2019ImageryCropped</folder>
+	<filename>56_S.png</filename>
+	<path>/Users/SusanneGov/Documents/Python Projects/Signs-and-Markings-Projects/OverheadSigns/SignsFY2019ImageryCropped/56_S.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>560</width>
+		<height>280</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>street name sign</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>296</xmin>
+			<ymin>76</ymin>
+			<xmax>342</xmax>
+			<ymax>100</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>street name sign</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>336</xmin>
+			<ymin>105</ymin>
+			<xmax>374</xmax>
+			<ymax>117</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,50 @@
+<annotation>
+	<folder>SignsFY2019ImageryCropped</folder>
+	<filename>53_W.png</filename>
+	<path>/Users/SusanneGov/Documents/Python Projects/Signs-and-Markings-Projects/OverheadSigns/SignsFY2019ImageryCropped/53_W.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>560</width>
+		<height>280</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>left turn not protected sign</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>114</xmin>
+			<ymin>34</ymin>
+			<xmax>146</xmax>
+			<ymax>70</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>bicyclists must use ped signal sign</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>337</xmin>
+			<ymin>33</ymin>
+			<xmax>364</xmax>
+			<ymax>63</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>no right turn on red sign</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>454</xmin>
+			<ymin>82</ymin>
+			<xmax>479</xmax>
+			<ymax>115</ymax>
+		</bndbox>
+	</object>
+</annotation>

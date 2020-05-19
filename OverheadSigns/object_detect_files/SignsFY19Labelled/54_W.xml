@@ -1,0 +1,26 @@
+<annotation>
+	<folder>SignsFY2019ImageryCropped</folder>
+	<filename>54_W.png</filename>
+	<path>/Users/SusanneGov/Documents/Python Projects/Signs-and-Markings-Projects/OverheadSigns/SignsFY2019ImageryCropped/54_W.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>560</width>
+		<height>280</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>left turn yield on green sign</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>96</xmin>
+			<ymin>35</ymin>
+			<xmax>120</xmax>
+			<ymax>63</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,112 @@
+item {
+  name: "no left turn sign"
+  id: 1
+}
+item {
+  name: "except with ut permit sign"
+  id: 2
+}
+item {
+  name: "turning vehicle yield symbol to ped symbol sign"
+  id: 3
+}
+item {
+  name: "bicyclists must use ped signal sign"
+  id: 4
+}
+item {
+  name: "no right turn on red sign"
+  id: 5
+}
+item {
+  name: "street name sign"
+  id: 6
+}
+item {
+  name: "left turn yield on flashing yellow arrow sign"
+  id: 7
+}
+item {
+  name: "no right turn sign"
+  id: 8
+}
+item {
+  name: "dont block the box sign"
+  id: 9
+}
+item {
+  name: "left turn not protected sign"
+  id: 10
+}
+item {
+  name: "left turn yield on green sign"
+  id: 11
+}
+item {
+  name: "turning vehicle yield to ped sign"
+  id: 12
+}
+item {
+  name: "one way arrow sign"
+  id: 13
+}
+item {
+  name: "left turn only sign"
+  id: 14
+}
+item {
+  name: "straight arrow only sign"
+  id: 15
+}
+item {
+  name: "red parking tow sign"
+  id: 16
+}
+item {
+  name: "left turn signal sign"
+  id: 17
+}
+item {
+  name: "green bus sign"
+  id: 18
+}
+item {
+  name: "do not block intersection sign"
+  id: 19
+}
+item {
+  name: "except bicycle sign"
+  id: 20
+}
+item {
+  name: "straight right turn sign"
+  id: 21
+}
+item {
+  name: "no left turn except bicycles"
+  id: 22
+}
+item {
+  name: "bike symbol may use full lane sign"
+  id: 23
+}
+item {
+  name: "do not enter sign"
+  id: 24
+}
+item {
+  name: "straight left turn sign"
+  id: 25
+}
+item {
+  name: "right turn only sign"
+  id: 26
+}
+item {
+  name: "no train horn sign"
+  id: 27
+}
+item {
+  name: "no ped crossing symbol use arrow sign"
+  id: 28
+}
