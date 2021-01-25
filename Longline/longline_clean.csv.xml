@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="en"><Esri><CreaDate>20210125</CreaDate><CreaTime>16270900</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files\arcgis\pro\Resources\ArcToolbox\toolboxes\Data Management Tools.tbx\AddRelate" Date="20210125" Time="162709">AddRelate longline_clean.csv "Street Segment IDs" TRANSPORTATION.atd_maintained_streets SEGMENT_ID Relate1 "One to many"</Process></lineage></DataProperties></Esri></metadata>
