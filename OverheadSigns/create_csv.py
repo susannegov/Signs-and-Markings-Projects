@@ -1,6 +1,6 @@
 # Original: https://github.com/datitran/raccoon_dataset/blob/master/xml_to_csv.py
 # Author: datittran
-# This script is modified to split google cloud photos into unassigned for 
+# This script is modified to split google cloud photos into unassigned
 # Google Vision AI csv reading.
 
 import os
